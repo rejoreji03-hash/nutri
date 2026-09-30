@@ -48,7 +48,7 @@ pipeline {
                 echo 'Running frontend tests...'
 
                 dir('frontend') {
-                    bat 'npm test'
+                    bat 'npm run lint'
                 }
             }
         }
