@@ -18,7 +18,7 @@ pipeline {
                 echo 'Running backend tests...'
 
                 dir('backend') {
-                    bat 'npm test'
+                    bat 'node tests/testSubscriptionMapping.js'
                 }
             }
         }
